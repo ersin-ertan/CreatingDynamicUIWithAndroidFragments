@@ -1,0 +1,19 @@
+<LinearLayout
+	xmlns:tools="http://schemas.android.com/tools"
+	android:orientation="horizontal"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/linearLayout_activity_main"
+	>
+
+	<fragment
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:id="@+id/fragmentListView_activity_main"
+		android:name="com.nullcognition.creatingdynamicuiwithandroidfragments.fragments.FragmentListView"
+		tools:layout="@layout/simple_list_item_1"
+		/>
+
+
+</LinearLayout>

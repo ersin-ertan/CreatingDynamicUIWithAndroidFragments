@@ -1,0 +1,28 @@
+<LinearLayout
+	xmlns:tools="http://schemas.android.com/tools"
+	android:orientation="horizontal"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/linearLayout_activity_main"
+	>
+
+	<fragment
+		android:layout_width="0dp"
+		android:layout_weight="2"
+		android:layout_height="match_parent"
+		android:id="@+id/fragmentListView_activity_main"
+		android:name="com.nullcognition.creatingdynamicuiwithandroidfragments.fragments.FragmentListView"
+		tools:layout="@layout/simple_list_item_1"
+		/>
+
+	<fragment
+		android:layout_width="0dp"
+		android:layout_weight="3"
+		android:layout_height="match_parent"
+	    android:id="@+id/fragmentDetail_activity_main"
+	    android:name="com.nullcognition.creatingdynamicuiwithandroidfragments.fragments.FragmentDetail"
+	    tools:layout="@layout/fragment_detail_layout"
+	    />
+
+</LinearLayout>
