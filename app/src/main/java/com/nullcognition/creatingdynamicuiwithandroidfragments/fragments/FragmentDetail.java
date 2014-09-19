@@ -1,8 +1,8 @@
 package com.nullcognition.creatingdynamicuiwithandroidfragments.fragments;
 public class FragmentDetail extends android.app.Fragment {
 
-  android.widget.TextView textView = null;
   public static final String textViewKey = "adftv_key";
+  android.widget.TextView textView = null;
 
   public FragmentDetail(){}
 

@@ -8,6 +8,9 @@ import android.view.MenuItem;
 
 public class ActivityMain extends Activity implements com.nullcognition.creatingdynamicuiwithandroidfragments.fragments.FragmentListView.OnListFragmentItemInteractionListener {
 
+  boolean                                                                          isMultiFragment = false; // for either portrait or landscape
+  com.nullcognition.creatingdynamicuiwithandroidfragments.fragments.FragmentDetail fragmentDetail  = null;
+
   @Override
   protected void onCreate(Bundle savedInstanceState){
 	super.onCreate(savedInstanceState);
@@ -15,6 +18,10 @@ public class ActivityMain extends Activity implements com.nullcognition.creating
 
   }
 
+  @Override
+  protected void onStart(){
+	super.onStart();
+  }
 
   @Override
   public boolean onCreateOptionsMenu(Menu menu){
@@ -36,14 +43,6 @@ public class ActivityMain extends Activity implements com.nullcognition.creating
 	}
 
 	return super.onOptionsItemSelected(item);
-  }
-
-  boolean                                                                          isMultiFragment = false; // for either portrait or landscape
-  com.nullcognition.creatingdynamicuiwithandroidfragments.fragments.FragmentDetail fragmentDetail  = null;
-
-  @Override
-  protected void onStart(){
-	super.onStart();
   }
 
   @Override

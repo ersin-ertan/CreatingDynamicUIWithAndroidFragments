@@ -10,17 +10,13 @@ import android.os.Bundle;
 public class FragmentDialog extends android.app.DialogFragment implements android.view.View.OnClickListener { // 3 parts: layout, title, frame
 
 
-  public static FragmentDialog newInstance(){
-	FragmentDialog fragment = new FragmentDialog();
-	return fragment;
-  }
+  private OnDialogFragmentInteractionListener mListener;
 
   public FragmentDialog(){}
 
-  @Override
-  public void onCreate(Bundle savedInstanceState){
-	super.onCreate(savedInstanceState);
-	setStyle(android.app.DialogFragment.STYLE_NORMAL, 0); // STYLE_NO_TITLE, STYLE_NO_INPUT,  STYLE_NO_FRAME
+  public static FragmentDialog newInstance(){
+	FragmentDialog fragment = new FragmentDialog();
+	return fragment;
   }
 
 //  @Override
@@ -38,7 +34,6 @@ public class FragmentDialog extends android.app.DialogFragment implements androi
 //  }
 //
 
-
   @Override
   public void onAttach(Activity activity){
 	super.onAttach(activity);
@@ -54,6 +49,12 @@ public class FragmentDialog extends android.app.DialogFragment implements androi
   public void onDetach(){
 	super.onDetach();
 	mListener = null;
+  }
+
+  @Override
+  public void onCreate(Bundle savedInstanceState){
+	super.onCreate(savedInstanceState);
+	setStyle(android.app.DialogFragment.STYLE_NORMAL, 0); // STYLE_NO_TITLE, STYLE_NO_INPUT,  STYLE_NO_FRAME
   }
 
   @Override
@@ -76,8 +77,6 @@ public class FragmentDialog extends android.app.DialogFragment implements androi
 	  mListener.onDialogFragmentInteraction(buttonPressed);
 	}
   }
-
-  private OnDialogFragmentInteractionListener mListener;
 
   public interface OnDialogFragmentInteractionListener {
 

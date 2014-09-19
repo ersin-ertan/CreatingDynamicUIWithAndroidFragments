@@ -24,6 +24,18 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.nullcognition.creatingdynamicuiwithandroidfragments.ActivityMain" />
         </activity>
+        <activity
+            android:name="com.nullcognition.creatingdynamicuiwithandroidfragments.ActivityDynamic"
+            android:label="@string/title_activity_activity_dynamic" >
+        </activity>
+        <activity
+            android:name="com.nullcognition.creatingdynamicuiwithandroidfragments.ActivitySwipe"
+            android:label="@string/title_activity_activity_swipe" >
+        </activity>
+        <activity
+            android:name="com.nullcognition.creatingdynamicuiwithandroidfragments.pager"
+            android:label="@string/title_activity_pager" >
+        </activity>
     </application>
 
 </manifest>
