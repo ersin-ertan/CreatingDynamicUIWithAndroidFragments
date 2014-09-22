@@ -39,6 +39,9 @@ public class ActivityMain extends Activity implements com.nullcognition.creating
 
 	//noinspection SimplifiableIfStatement
 	if(id == R.id.action_settings){
+	  android.content.Intent ActivitySwipe = new android.content.Intent(this,
+																		com.nullcognition.creatingdynamicuiwithandroidfragments.ActivitySwipe.class);
+	  startActivity(ActivitySwipe);
 	  return true;
 	}
 

@@ -34,12 +34,12 @@ public class ActivityDetail extends Activity implements com.nullcognition.creati
 	// put fragments into layouts too, if doing transactions
   }
 
-
   @Override
   protected void onStart(){
 	super.onStart();
 
 	//getFragmentManager().executePendingTransactions(); // vital if in the same method of .commit()
+
 
 	detailText = (String)getIntent().getExtras().get(com.nullcognition.creatingdynamicuiwithandroidfragments.fragments.FragmentDetail.textViewKey);
 

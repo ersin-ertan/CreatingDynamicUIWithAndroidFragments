@@ -33,7 +33,7 @@
             android:label="@string/title_activity_activity_swipe" >
         </activity>
         <activity
-            android:name="com.nullcognition.creatingdynamicuiwithandroidfragments.pager"
+            android:name=".Pager"
             android:label="@string/title_activity_pager" >
         </activity>
     </application>

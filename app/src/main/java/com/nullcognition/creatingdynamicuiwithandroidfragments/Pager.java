@@ -17,7 +17,7 @@ import android.view.ViewGroup;
 import java.util.Locale;
 
 
-public class pager extends Activity implements ActionBar.TabListener {
+public class Pager extends Activity implements ActionBar.TabListener {
 
     /**
      * The {@link android.support.v4.view.PagerAdapter} that will provide
