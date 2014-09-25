@@ -43,7 +43,9 @@ public class ActivitySwipe extends android.support.v4.app.FragmentActivity {
 
 	//noinspection SimplifiableIfStatement
 	if(id == R.id.action_settings){
-
+	  android.content.Intent ActivityTabs = new android.content.Intent(this,
+																	   com.nullcognition.creatingdynamicuiwithandroidfragments.ActivityTabs.class);
+	  startActivity(ActivityTabs);
 
 	  return true;
 	}

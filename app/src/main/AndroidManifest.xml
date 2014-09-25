@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.nullcognition.creatingdynamicuiwithandroidfragments" >
+<manifest
+	package="com.nullcognition.creatingdynamicuiwithandroidfragments"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	>
 
-    <application
+	<application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
@@ -33,9 +35,14 @@
             android:label="@string/title_activity_activity_swipe" >
         </activity>
         <activity
-            android:name=".Pager"
+	        android:name="com.nullcognition.creatingdynamicuiwithandroidfragments.Pager"
             android:label="@string/title_activity_pager" >
         </activity>
+		<activity
+			android:name="com.nullcognition.creatingdynamicuiwithandroidfragments.ActivityTabs"
+			android:label="@string/title_activity_activity_tabs"
+			>
+		</activity>
     </application>
 
 </manifest>
